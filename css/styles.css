@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Page background color */
+}
+
+.top-nav {
+  width: 100%;
+  background-color: white; /* Change background to white */
+  color: black; /* Change text color to black */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.logo img {
+  height: 60px; /* Increase the height of the logo */
+  margin-left: 20px;
+}
+
+.top-nav nav {
+  margin-left: auto;
+}
+
+.top-nav nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.top-nav nav ul li {
+  display: inline;
+}
+
+.top-nav nav ul li a {
+  color: black; /* Change link color to black */
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.top-nav nav ul li a:hover {
+  background-color: #f0f0f0; /* Change hover background color */
+}
+
+.top-nav nav ul li.right-align {
+  margin-left: auto; /* Align the login/register link to the right */
+}
+
+.top-nav nav ul li a.login-register {
+  background-color: white; /* White background */
+  color: black; /* Black text */
+  padding: 10px 20px; /* Padding for the link */
+  border: 2px solid black; /* Black border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.top-nav nav ul li a.login-register:hover {
+  background-color: #f0f0f0; /* Slightly different background on hover */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Adjust height to 800px */
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.header-content {
+  position: absolute;
+  bottom: 20px; /* Adjust positioning as needed */
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2em; /* Adjust font size as needed */
+}
+
+.social-links {
+  position: fixed;
+  top: 150px; /* Adjust position as needed */
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  gap: 30px; /* Add gap between icons */
+  z-index: 1000;
+}
+
+.social-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 32px; /* Increase the icon size */
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+main {
+  padding: 120px 20px 20px; /* Ensure there is space for the fixed nav */
+}
+
+.contact-info, .contact-form {
+  background-color: #2f4f4f; /* Form background color */
+  color: white; /* Text color */
+  padding: 20px; /* Adjusted padding for more space */
+  border-radius: 5px;
+  margin-bottom: 40px;
+  max-width: 600px; /* Maximum width for the form */
+  margin-left: auto; /* Center align */
+  margin-right: auto; /* Center align */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.contact-info h1, .contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info p, .contact-form label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%; /* Ensure the input field has full width */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white; /* Input field background */
+  color: black; /* Input text color */
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #575757;
+}
+
+.testimonials {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonials h1 {
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increase the gap between icons */
+  margin-bottom: 20px; /* Add some space below the social links */
+}
+
+.footer-social-links a {
+  color: black;
+  font-size: 32px; /* Increase the icon size */
+  transition: color 0.3s;
+}
+
+.footer-social-links a:hover {
+  color: #333;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
